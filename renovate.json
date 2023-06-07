@@ -3,12 +3,21 @@
   "extends": [
     "config:base"
   ],
+  "baseBranches": [
+    "develop"
+  ],
   "packageRules": [
+    {
+      "matchPaths": [
+        "examples/vites/**"
+      ],
+      "rangeStrategy": "bump"
+    },
     {
       "matchPackagePatterns": [
         "*"
       ],
-      "rangeStrategy": "replace"
+      "rangeStrategy": "bump"
     }
   ]
 }
