@@ -5,6 +5,11 @@
   ],
   "packageRules": [
     {
+      "matchPaths": [
+        "examples/vites/**"
+      ]
+    },
+    {
       "matchPackagePatterns": [
         "*"
       ],
