@@ -64,7 +64,7 @@
     "release:pre": "standard-version --prerelease rc"
   },
   "peerDependencies": {
-    "vue": "^3"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
