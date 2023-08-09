@@ -67,8 +67,8 @@
     "vue": "^3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
+    "@commitlint/cli": "^17.7.0",
+    "@commitlint/config-conventional": "^17.7.0",
     "eslint": "^8.46.0",
     "husky": "^8.0.3",
     "standard-version": "^9.5.0",
