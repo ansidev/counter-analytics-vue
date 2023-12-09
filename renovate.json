@@ -8,16 +8,13 @@
   ],
   "packageRules": [
     {
-      "matchPaths": [
-        "examples/vites/**"
+      "matchFileNames": [
+        "**/package.json"
       ],
-      "rangeStrategy": "bump"
-    },
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "rangeStrategy": "bump"
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ]
     }
   ]
 }
