@@ -69,8 +69,8 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
-    "eslint": "^8.30.0",
-    "husky": "^8.0.2",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
     "standard-version": "^9.5.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
