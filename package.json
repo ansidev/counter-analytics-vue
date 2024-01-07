@@ -73,7 +73,7 @@
     "husky": "^8.0.2",
     "standard-version": "^9.5.0",
     "tsup": "^6.5.0",
-    "typescript": "^5.0.0",
+    "typescript": "^5.3.3",
     "vue": "^3.2.45"
   },
   "standard-version": {
