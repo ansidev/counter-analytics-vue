@@ -24,7 +24,7 @@ jobs:
           VITE_COUNTER_ANALYTICS_ID: ${{ secrets.VITE_COUNTER_ANALYTICS_ID }}
         uses: ghacts/static-site@main
         with:
-          node-version: 18
+          node-version: 20
           skip-lint: true
           skip-test: true
           build-script: "build:example"
