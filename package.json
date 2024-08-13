@@ -51,7 +51,7 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint": "eslint . --ext .ts --ignore-path .gitignore src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore --fix src",
     "build": "tsup src/index.ts --dts --format cjs,esm --clean",
@@ -70,7 +70,7 @@
     "@commitlint/cli": "^19.0.0",
     "@commitlint/config-conventional": "^19.0.0",
     "eslint": "^9.0.0",
-    "husky": "^9.0.0",
+    "husky": "^9.1.4",
     "standard-version": "^9.5.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
