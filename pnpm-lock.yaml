@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@commitlint/cli':
-        specifier: ^19.0.0
+        specifier: ^19.6.1
         version: 19.6.1(@types/node@22.10.6)(typescript@5.5.4)
       '@commitlint/config-conventional':
-        specifier: ^19.0.0
+        specifier: ^19.6.0
         version: 19.6.0
       eslint:
         specifier: ^9.0.0
