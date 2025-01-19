@@ -18,7 +18,7 @@ importers:
         specifier: ^9.0.0
         version: 9.18.0(jiti@2.4.2)
       husky:
-        specifier: ^9.1.4
+        specifier: ^9.1.7
         version: 9.1.7
       standard-version:
         specifier: ^9.5.0
