@@ -4,7 +4,7 @@ vars:
   GIT_REMOTE: origin
   BRANCH_BASE: develop
   BRANCH_DEP_PREFIX: deps
-  COMMIT_FILES: package.json pnpm-lock.yaml
+  COMMIT_FILES: package.json pnpm-lock.yaml examples/vite/package.json
 
 includes:
   site:
@@ -34,7 +34,7 @@ tasks:
       - task: init_dep_branch
         vars:
           BRANCH_NAME: "{{.CLI_ARGS}}"
-      - ncu -u -f {{.CLI_ARGS}}
+      - ncu -u -f {{.CLI_ARGS}} --deep
       - task: "site:build"
       - task: commit
         vars:
