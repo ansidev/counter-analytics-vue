@@ -15,7 +15,7 @@ importers:
         specifier: ^19.6.0
         version: 19.6.0
       eslint:
-        specifier: ^9.0.0
+        specifier: ^9.18.0
         version: 9.18.0(jiti@2.4.2)
       husky:
         specifier: ^9.1.7
