@@ -8,6 +8,11 @@
   ],
   "packageRules": [
     {
+      "description": "Example dependencies",
+      "matchFileNames": ["examples/vite/package.json"],
+      "groupName": "Example's package.json changes"
+    },
+    {
       "matchFileNames": [
         "**/package.json"
       ],
