@@ -1,20 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
-  "baseBranches": [
-    "develop"
-  ],
+  "extends": ["config:recommended"],
+  "baseBranches": ["develop"],
   "packageRules": [
     {
-      "matchFileNames": [
-        "**/package.json"
-      ],
-      "matchUpdateTypes": [
-        "major",
-        "minor"
-      ]
+      "description": "Example dependencies",
+      "matchFileNames": ["examples/vite/package.json"],
+      "groupName": "Example's package.json changes"
+    },
+    {
+      "matchFileNames": ["**/package.json"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchFileNames": ["**/package.json"],
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
     }
   ]
 }
