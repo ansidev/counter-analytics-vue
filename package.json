@@ -3,9 +3,9 @@
   "description": "Counter Analytics integration for Vue v3",
   "author": "Le Minh Tri <ansidev@gmail.com>",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
-  "packageManager": "pnpm@8.6.1",
+  "packageManager": "pnpm@10.10.0",
   "homepage": "https://github.com/ansidev/counter-analytics-vue",
   "funding": [
     {
@@ -51,34 +51,24 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint": "eslint . --ext .ts --ignore-path .gitignore src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore --fix src",
     "build": "tsup src/index.ts --dts --format cjs,esm --clean",
     "build:example": "pnpm run build && pnpm --filter example-counter-analytics-vue-vite run build",
     "dev": "pnpm run build -- --watch && pnpm --filter example-counter-analytics-vue-vite run dev",
-    "preview": "pnpm --filter example-counter-analytics-vue-vite run preview",
-    "release:major": "standard-version --release-as major",
-    "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
-    "release:pre": "standard-version --prerelease rc"
+    "preview": "pnpm --filter example-counter-analytics-vue-vite run preview"
   },
   "peerDependencies": {
     "vue": "^3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.4",
-    "@commitlint/config-conventional": "^18.4.4",
-    "eslint": "^8.56.0",
-    "husky": "^8.0.3",
-    "standard-version": "^9.5.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3",
-    "vue": "^3.4.5"
-  },
-  "standard-version": {
-    "skip": {
-      "tag": true
-    }
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "eslint": "^9.18.0",
+    "husky": "^9.1.7",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "vue": "^3.5.13"
   }
 }

@@ -1,11 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
-  "baseBranches": [
-    "develop"
-  ],
+  "extends": ["config:recommended"],
+  "baseBranches": ["develop"],
   "packageRules": [
     {
       "description": "Example dependencies",
@@ -13,13 +9,14 @@
       "groupName": "Example's package.json changes"
     },
     {
-      "matchFileNames": [
-        "**/package.json"
-      ],
-      "matchUpdateTypes": [
-        "major",
-        "minor"
-      ]
+      "matchFileNames": ["**/package.json"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchFileNames": ["**/package.json"],
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
     }
   ]
 }
