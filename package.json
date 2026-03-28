@@ -53,9 +53,9 @@
     "prepare": "husky",
     "lint": "eslint . --ext .ts --ignore-path .gitignore src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore --fix src",
-    "build": "tsup src/index.ts --dts --format cjs,esm --clean",
+    "build": "rolldown -c",
     "build:example": "pnpm run build && pnpm --filter example-counter-analytics-vue-vite run build",
-    "dev": "pnpm run build -- --watch && pnpm --filter example-counter-analytics-vue-vite run dev",
+    "dev": "rolldown -c --watch && pnpm --filter example-counter-analytics-vue-vite run dev",
     "preview": "pnpm --filter example-counter-analytics-vue-vite run preview"
   },
   "peerDependencies": {
