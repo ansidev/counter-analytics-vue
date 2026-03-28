@@ -20,6 +20,7 @@ export default defineConfig([
       dir: 'dist',
       format: 'cjs',
       entryFileNames: 'index.cjs',
+      exports: 'named',
     },
   },
 ])
